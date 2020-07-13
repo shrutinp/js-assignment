@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function date()
+            {
+                var day=new Array(7);
+                day[0] = "Sunday";
+                day[1] = "Monday";
+                day[2] = "Tuesday";
+                day[3] = "Wednesday";
+                day[4] = "Thursday";
+                day[5] = "Friday";
+                day[6] = "Saturday";
+                d=new Date();
+                   document.write("Today is :  "+day[d.getDay()]+"<br>");
+                   var h=d.getHours();
+                   var m=d.getMinutes();
+                   var s=d.getSeconds();
+                   if(h>12)
+                   {
+                       h=h-12;
+                    document.write("Current time is : "+h+" PM");
+                   }
+                   else
+                        document.write("Current time is : "+h+" AM");
+
+                    
+                        document.write(" : "+m+": "+s);                 
+            }
+        </script>
+    </head>
+    <body>
+    <button type="button" onClick=date()>  
+    Click
+    </button>
+    </body>
+    <h2 id="demo">
+    </h2>  
+</html>
