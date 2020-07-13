@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function date()
+            {
+                d=new Date();
+                    var dd=d.getDate();
+                    var mm=d.getMonth();
+                    var yy=d.getFullYear();
+                    document.write("mm/dd/yyyy : "+mm+" / "+dd+" / "+yy);
+                    
+                    document.write("<br><br>mm-dd-yyyy : "+mm+" - "+dd+" - "+yy);
+                    
+                    document.write("<br><br>dd/mm/yyyy : "+dd+" / "+mm+" / "+yy);
+                    
+                    document.write("<br><br>dd-mm-yyyy : "+dd+" - "+mm+" - "+yy);
+                                     
+            }
+        </script>
+    </head>
+    <body>
+    <button type="button" onClick=date()>  
+    Click here to view date
+    </button>
+    </body>
+    <h2 id="demo">
+    </h2>  
+</html>
