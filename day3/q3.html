@@ -1,0 +1,39 @@
+<!-- Write a program to take marks as input from the user
+     and grade him accordingly.
+      Use Conditional statements.
+       Also the same code using switch or ternary
+       input: 50
+       Output : Marks are 50 and grade is B -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script>
+    var marks=prompt("Enter the marks");
+        console.log("**using if else statement\n");
+        if(marks>=80)
+            console.log("Marks are "+marks+" grade is A");
+        else if(marks>=60)
+            console.log("Marks are "+marks+" grade is B");
+        else if(marks>=50)
+            console.log("Marks are "+marks+" grade is C");
+        else
+            console.log("Marks are "+marks+" grade is FAIL");
+        console.log("\n**using ternary operator\n");
+        result(marks);
+
+        function result(marks) {
+        return (marks>=80) ? console.log("Marks are "+marks+" grade is A")
+         : (marks>=60) ? console.log("Marks are "+marks+" grade is B")
+         : (marks>=40) ? console.log("Marks are "+marks+" grade is C")
+         :console.log("Marks are "+marks+" grade is FAIL");
+        }
+        
+    </script>
+    <body>
+        
+    </body>
+    </html>
