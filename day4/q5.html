@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment Que. 5</title>
+</head>
+<body>
+    <script>
+        var com=0;
+        var sale=window.prompt("Enter your annual sale");
+        if(sale>0 && sale<5001)
+        {
+            com=sale*0.02;
+        }
+        else if(sale > 5000 && sale < 10001)
+        {
+            com=sale*0.05;
+        }
+        else if(sale>10000 && sale<20001)
+        {
+            com=sale*0.07;
+        }
+        else
+        com=sale*0.1;
+
+        console.log("Your commission is : "+com)
+    </script>
+</body>
+</html>
