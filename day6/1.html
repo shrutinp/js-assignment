@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+<body onload="start()">
+<script type="text/javascript">
+  var c = ["blue", "black", "yellow", "red"];
+
+  function changeColor() {
+    setTimeout(function loop() {
+      document.bgColor = c.shift();
+      if (c.length) {
+        setTimeout(loop, 1000);
+      }
+    }, 5000);
+  }
+
+  function start() {
+    setInterval(changeColor(), 1000);
+  }
+</script>
+
+
+	</body>
+</html>
