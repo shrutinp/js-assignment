@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="sw.css">
+    
+</head>
+<body style="text-align: center;" onload="init();">
+    <div id="date" class="date">
+        <!--<script>
+            var date=new Date();
+            console.log(date);
+            var d=date.getDate();
+            var m=date.getMonth();
+            var y=date.getFullYear();
+            document.write("Date: "+d+"-"+m+"-"+y);
+        </script>-->
+    </div>
+    <div class="center">
+        <div id="time">
+            <p id="time" class="time"></p>
+        </div>
+        <br>
+        <div id="btn" >
+
+            <button onclick="start();" class="btn">Start</button>
+            <button onclick="stop();"class="btn">Stop</button>
+            <button onclick="reset();"class="btn">Reset</button>
+        </div>
+    </div>  
+    <script src="sw.js"></script>
+</body>
+</html>
